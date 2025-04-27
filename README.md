@@ -1,3 +1,4 @@
+```
 
 /container mounts add dst=/data1 name=data1 src=/
 /container config set registry-url=https://registry.hub.docker.com tmpdir=usb1-part1/container
@@ -35,3 +36,5 @@ root-dir=usb1-part1/container/dnsmasq start-on-boot=no
 cmd="-c 'cp -fv /data1/ros-api/ros-api /;chmod 777 /ros-api;/ros-api'" \
 entrypoint=ash envlist=TZ hostname=ros-api.local interface=veth4 logging=yes mounts=data1 \
 root-dir=usb1-part1/container/ros-api start-on-boot=no
+
+```
